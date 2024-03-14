@@ -8,7 +8,20 @@ function App() {
   return (
     <>
       <Header logo="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png" />
-      <HeadLines/>
+      <div className="flex flex-row justify-between mt-20">
+        <div className="flex flex-col lg:w-1/3 justify-center">
+          <h3 className="ml-28">Latest US News</h3>
+          <HeadLines countryCode="us" />
+        </div>
+        <div className="flex flex-col lg:w-1/3 justify-center">
+          <h3 className="ml-28">Latest United Arab Emirates News</h3>
+          <HeadLines countryCode="ae" />
+        </div>
+        <div className="flex flex-col lg:w-1/3 justify-center">
+          <h3 className="ml-28">Latest Egypt News</h3>
+          <HeadLines countryCode="eg" />
+        </div>
+      </div>
     </>
   );
 }

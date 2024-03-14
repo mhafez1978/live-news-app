@@ -25,13 +25,14 @@ const Header = (props) => {
           </a>
         </div>
         <div>
-          <ul className='flex flex-row gap-2 font-black uppercase'>
+          {/* <ul className='flex flex-row gap-2 font-black uppercase'>
             {navMenu.map((navLink) => (
               <li className="list-none inline-block">
                 <a href={navLink.pageUrl}>{navLink.pageName}</a>
               </li>
             ))}
-          </ul>
+          </ul> */}
+          <h5>Need an App like this ? Call me +1 978 888 7688</h5>
         </div>
       </div>
     </div>
